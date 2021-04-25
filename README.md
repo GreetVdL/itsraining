@@ -1,4 +1,4 @@
-![website preview](./images/screenshot.png)
+![website preview](./images/screenshot-kopie.png)
 
 # It's raining men
 
