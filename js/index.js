@@ -49,14 +49,23 @@ function showMen() {
     theBody.innerHTML = "";
 
     printArr.forEach((obj, i) => {
-      theBody.innerHTML += `<img src="${obj.foto}" alt="">`;
-      let thisFotos = document.querySelectorAll(`img[src="${obj.foto}"]`);
-      let thisFoto = thisFotos[thisFotos.length - 1];
-      thisFoto.style.top = `${obj.y}px`;
-      thisFoto.style.left = `${obj.x}px`;
-      thisFoto.style.transform = `rotate(${obj.r}deg)`;
-      console.log(thisFoto);
+      const myImage = document.createElement("img");
+      myImage.src = obj.foto;
+      myImage.style.top = `${obj.y}px`;
+      myImage.style.left = `${obj.x}px`;
+      myImage.style.transform = `rotate(${obj.r}deg)`;
+      theBody.appendChild(myImage);
     });
+
+    // printArr.forEach((obj, i) => {
+    //   theBody.innerHTML += `<img src="${obj.foto}" alt="">`;
+    //   let thisFotos = document.querySelectorAll(`img[src="${obj.foto}"]`);
+    //   let thisFoto = thisFotos[thisFotos.length - 1];
+    //   thisFoto.style.top = `${obj.y}px`;
+    //   thisFoto.style.left = `${obj.x}px`;
+    //   thisFoto.style.transform = `rotate(${obj.r}deg)`;
+    //   console.log(thisFoto);
+    // });
 
     for (var i = 0; i < printArr.length - 1; i++) {
       if (newFoto.foto === printArr[i].foto) {
