@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  background-image: url("../images/bg.png");
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid red;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  transform: none;
+}
