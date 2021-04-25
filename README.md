@@ -1,9 +1,9 @@
 ![website preview](./images/screenshot-kopie.png)
 
-# It's raining men
+# It's raining
 
-A joky vanilla js project. A random image generator. When two identical images appear, everything will reset.
+## A joky vanilla js project.
 
-***Deployment via Vercel:***
+A random image generator. When two identical images appear, everything will reset.
 
-[https://itsraining.vercel.app/](https://itsraining.vercel.app/)
+You can view the website [here](https://itsraining.vercel.app/).
